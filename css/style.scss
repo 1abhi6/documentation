@@ -1,0 +1,178 @@
+
+// CSS Reset 
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+// Variables 
+    $color:#4d4e53;
+    $color_hover:#d3d3d36c;
+
+    // Scroll bar settings 
+    ::-webkit-scrollbar{
+        width:.1rem;
+    }
+
+// Common Styling
+
+html,body{
+    font-size: 62.5%;
+    min-width: 29rem;
+    color: $color;
+    background-color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+
+// Navigation section 
+
+nav{
+    overflow-x: hidden;
+    overflow-y:scroll;
+    position: fixed;
+    min-width: 29rem;
+    top: 0rem;
+    left: 0rem;
+    width: 30rem;
+    height: 100vh;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    header{
+        color: black;
+        margin: 1rem;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: thin;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    li{
+        list-style: none;
+        color: $color;
+        border-top: .1rem solid;
+        position: relative;
+        width: 100%;
+        padding: 1.0rem 3.0rem;
+        cursor: pointer;
+        transition: background 0.3s ease-out;
+        &:hover{
+            background:$color_hover;
+        }
+        a{
+            margin: 1rem 0rem;
+            font-size:1.6rem;
+            text-decoration: none;
+            color:$color;
+            display: block;
+        }
+    }
+}
+}
+
+// Documentation Content
+
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius:.5rem;
+    font-size: 1.4rem;
+  }
+
+  .document{
+    position: absolute;
+    margin-left: 31rem;
+    padding: 2rem;
+    margin-bottom: 11rem;
+
+    .text{
+    
+        header{
+            font-size: 3rem;
+            color: black;
+        }
+        article{
+            color: #4d4e53;
+            margin: 1.5rem;
+            p{
+                font-size: 1.8rem;
+                margin: 1.8rem;
+            }
+          
+            li{
+                font-size: 1.8rem;
+                margin: 1.5rem 0rem 0rem 12rem;
+                }
+        }
+    }
+    a{
+        transition: all 0.3s ease-out;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+
+// This section is for media query 
+
+@media (min-width:240px) and (max-width:590px) {
+
+    // body section 
+
+    body{
+        font-size: 40%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    // nav section 
+    nav{
+        position: absolute;
+        top:0rem;
+        left: 0rem;
+        width: 40rem;
+        height: 70rem;
+    }
+
+    // document section
+
+    .document{
+        position: absolute;
+        top:75rem;
+        margin-left: 0rem;
+        padding: 1.5rem;
+        overflow-x: hidden;
+
+        // text section 
+        .text{
+
+            // article section 
+            article{
+             li{
+                margin: 1.5rem 0rem 0rem 6rem;
+                }
+            }
+        }
+    }
+
+    
+}

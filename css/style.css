@@ -1,0 +1,158 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: .1rem;
+}
+
+html, body {
+  font-size: 62.5%;
+  min-width: 29rem;
+  color: #4d4e53;
+  background-color: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+nav {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  min-width: 29rem;
+  top: 0rem;
+  left: 0rem;
+  width: 30rem;
+  height: 100vh;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+nav header {
+  color: black;
+  margin: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: thin;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+nav ul li {
+  list-style: none;
+  color: #4d4e53;
+  border-top: .1rem solid;
+  position: relative;
+  width: 100%;
+  padding: 1.0rem 3.0rem;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
+
+nav ul li:hover {
+  background: #d3d3d36c;
+}
+
+nav ul li a {
+  margin: 1rem 0rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #4d4e53;
+  display: block;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+}
+
+.document {
+  position: absolute;
+  margin-left: 31rem;
+  padding: 2rem;
+  margin-bottom: 11rem;
+}
+
+.document .text header {
+  font-size: 3rem;
+  color: black;
+}
+
+.document .text article {
+  color: #4d4e53;
+  margin: 1.5rem;
+}
+
+.document .text article p {
+  font-size: 1.8rem;
+  margin: 1.8rem;
+}
+
+.document .text article li {
+  font-size: 1.8rem;
+  margin: 1.5rem 0rem 0rem 12rem;
+}
+
+.document a {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.document a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 240px) and (max-width: 590px) {
+  body {
+    font-size: 40%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  nav {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 40rem;
+    height: 70rem;
+  }
+  .document {
+    position: absolute;
+    top: 75rem;
+    margin-left: 0rem;
+    padding: 1.5rem;
+    overflow-x: hidden;
+  }
+  .document .text article li {
+    margin: 1.5rem 0rem 0rem 6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
